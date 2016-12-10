@@ -1,0 +1,48 @@
+---
+layout: application
+step: 3
+title: Now tell us about the people you live with.
+---
+
+<div class="prompt">
+  <p class="prompt__primary-text"><label for="householdSize">Including yourself, how many people live in your household?</label></p>
+</div>
+<div class="response">
+  <input class="input--short" type="tel" id="householdSize" required />
+</div>
+
+<script>
+  $(document).ready(function() {
+
+
+    $('#print-applicantFirstName').text(applicantFirstName);
+    // $('#householdSize').val(householdSize);
+    // $('#householdShareMeals').val(householdShareMeals);
+
+    $(".usa-button-big").click(function(event) {
+        event.preventDefault();
+
+        storeData();
+        getData();
+
+        // if ((householdShareMeals == 0) && (benefitChoiceHealthcare == "no")) {
+        //   window.location.href = "../04-finances/index.html";
+        // }
+
+        if (householdSize > 1) {
+          window.location.href = "../03-basic-family/household-size-names.html"
+        }
+
+        else {
+          window.location.href = "../04-finances/index.html";
+        }
+
+        // else if (householdShareMeals > 1 ) {
+        //   window.location.href = "household-share-meals-from-names.html";
+        // }
+        // else {
+        //   window.location.href = "household-meals-only-names.html";
+        // }
+    });
+  });
+</script>

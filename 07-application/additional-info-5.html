@@ -1,0 +1,56 @@
+---
+layout: application
+step: 6
+title: A few more questions that will help us better process your application.
+---
+
+<fieldset>
+  <div class="prompt">
+    <legend class="prompt__primary-text">Has anyone in the household received more than $20 of LIHEAP, SER energy related, or MEAP funds in the current month or hte previous 12 months?</legend>
+  </div>
+  <div class="response">
+    <ul class="usa-unstyled-list response__radiogroup--inline">
+      <li>
+        <input id="hasReceivedSEREtcYes" type="radio" name="hasReceivedSEREtc" value="Yes" required="">
+        <label for="hasReceivedSEREtcYes">Yes</label>
+      </li>
+      <li>
+        <input id="hasReceivedSEREtcNo" type="radio" name="hasReceivedSEREtc" value="No" required="">
+        <label for="hasReceivedSEREtcNo">No</label>
+      </li>
+    </ul>
+  </div>
+</fieldset>
+
+<fieldset>
+  <div class="prompt">
+    <legend class="prompt__primary-text">Has anyone in the household received more than $20 in HHC funds in the current month or the previous 12 months?</legend>
+  </div>
+  <div class="response">
+    <ul class="usa-unstyled-list response__radiogroup--inline">
+      <li>
+        <input id="hasReceivedHHCYes" type="radio" name="hasReceivedHHC" value="Yes" required="">
+        <label for="hasReceivedHHCYes">Yes</label>
+      </li>
+      <li>
+        <input id="hasReceivedHHCEtcNo" type="radio" name="hasReceivedHHC" value="No" required="">
+        <label for="hasReceivedHHCEtcNo">No</label>
+      </li>
+    </ul>
+  </div>
+</fieldset>
+
+<script>
+  $(document).ready(function() {
+
+    $(".usa-button-big").click(function(event) {
+      event.preventDefault();
+
+      storeData();
+      getData();
+
+      window.location.href = "review.html";
+
+    });
+  });
+</script>

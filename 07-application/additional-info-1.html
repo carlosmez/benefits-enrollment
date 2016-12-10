@@ -1,0 +1,66 @@
+---
+layout: application
+step: 6
+title: Now tell us about the people you share food with.
+---
+
+<div class="prompt">
+  <p class="prompt__primary-text"><label for="householdShareMeals">In your home, how many people do you regularly buy food for and prepare meals with?</label></p>
+  <p class="prompt__secondary-text">Count your roommates if you often buy food and cook together.</p>
+</div>
+<div class="response">
+  <ul class="usa-unstyled-list checkbox-group">
+    <li>
+      <input id="householdShareMealsSame" type="checkbox" name="householdShareMealsSame" value="Yes">
+      <label for="householdShareMealsSame">Everyone listed that lives with me.</label>
+    </li>
+  </ul>
+</div>
+<div class="response">
+  <input class="input--short" type="tel" id="householdShareMeals" required />
+</div>
+
+<script>
+  $(document).ready(function() {
+
+    $('#householdShareMealsSame').on('change', function(){
+      if ($(this).is(':checked')) {
+        $('#householdShareMeals').val(householdSize);
+      }
+      else {
+        $('#householdShareMeals').val("");
+      }
+    })
+
+
+    $('#print-applicantFirstName').text(applicantFirstName);
+    // $('#householdSize').val(householdSize);
+    // $('#householdShareMeals').val(householdShareMeals);
+
+    $(".usa-button-big").click(function(event) {
+        event.preventDefault();
+
+        storeData();
+        getData();
+
+        if ((householdShareMeals !== householdSize) && householdShareMeals != 0) {
+          window.location.href = "../03-basic-family/household-share-meals-from-names.html";
+        }
+
+        else {
+          window.location.href = "additional-info-2.html";
+        }
+
+        // else if (householdShareMeals == 0) {
+        //   window.location.href = "../03-family-details/index.html";
+        // }
+
+        // else if (householdShareMeals > 1 ) {
+        //   window.location.href = "../03-basic-family/household-share-meals-from-names.html";
+        // }
+        // else {
+        //   window.location.href = "household-meals-only-names.html";
+        // }
+    });
+  });
+</script>

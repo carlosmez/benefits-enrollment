@@ -1,0 +1,51 @@
+---
+layout: application
+title: As you apply, we’ll need some more info. This helps us get you benefits faster.
+button_text: Get started!
+---
+
+<p class="usa-font-lead">
+	Use this list to help you gather what you may need to apply. 
+</p>
+
+<h3>Here’s some info we need:</h3>
+
+<div class="prompt__secondary-text">
+	<ul>
+		<li>You and your household, addresses, and date of birth</li>
+		<li>Phone number to follow-up, which helps you get benefits quicker</li>
+		<li>Money from jobs or other sources, and employer info</li>
+		<li>Housing expenses</li>
+		<li>Social Security Numbers for anyone you’re applying for</li>
+		<li>Government benefits such as unemployment or retirement account payments</li>
+		<li>Any medical coverage, disabilities, and/or pregnancies</li>
+	</ul>
+</div>
+
+<div class="explainer">
+  <a href="#" class="explainer__toggle" aria-expanded="false" aria-controls="explainer-1">Info for immigrants</a>
+  <div class="explainer__content" id="explainer-1">
+    <p>Applying for these programs will not affect your or your family's immigration status.</p>
+
+    <p><strong>If you or someone in your household is not a citizen, you may still be able to receive some benefits.</strong></p>
+
+    <p>We ask about citizenship so that we can help you find out what programs you qualify for.</p>
+  </div>
+</div>
+
+<div class="note note--has-icon">
+  <i class="fa fa-lock note__icon" aria-hidden="true"></i>
+  <p class="note__text">This information is kept confidential and secure as required by law. <a href="https://www.cms.gov/about-cms/agency-information/aboutwebsite/privacy-policy.html" target="_blank">Learn more.</a></p>
+</div>
+
+<p class="use-lead-font">We’ll take you through step-by-step.</p>
+
+
+<script>
+	$(document).ready(function() {
+		$(".usa-button-big").click(function(event) {
+			event.preventDefault();
+			window.location.href = "../01-basic-info/who-is-applying.html";
+		});
+	});
+</script>

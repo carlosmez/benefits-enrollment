@@ -1,0 +1,81 @@
+---
+layout: application
+title: Select the benefits you would like to apply for.
+step: 1
+---
+
+<fieldset>
+	<div class="prompt">
+		<legend class="prompt__primary-text">You can apply for all or just one program. Check all the benefits you want to apply for:</legend>
+	</div>
+	<div class="response">
+		<ul class="usa-unstyled-list checkbox-group benefit-selection">
+			<li>
+				<input id="benefitChoiceStateEmergencyRelief" type="checkbox" name="benefitChoice" value="Text">
+				<label for="benefitChoiceStateEmergencyRelief">State Emergency Relief <i class="fa fa-home" aria-hidden="true"></i><span class="benefit-description">Provides aid for emergency situations.</span>
+				<span class="benefit-name">Benefits are determined within 10 days.</span> </label>
+			</li>
+			<li>
+				<input id="benefitChoiceFoodAssistance" type="checkbox" name="benefitChoice" value="Text">
+				<label for="benefitChoiceFoodAssistance">Food Assistance (FAP) <i class="fa fa-cutlery" aria-hidden="true"></i><span class="benefit-description">Money for food at supermarkets, farmer’s market, and convenience stores.<br>We can check if you may qualify for 3 day Expedited Service benefit.</span>
+				<span class="benefit-name">Benefits are determined within 7-30 days.</span> </label>
+
+				<div class="explainer">
+				  <a href="#" class="explainer__toggle" aria-expanded="false" aria-controls="explainer-1">What is 3 Day SNAP Expedited Service?</a>
+				  <div class="explainer__content" id="explainer-1">
+				    <p>To qualify for 3 Day Expedited Service, your income is:</p>
+
+				    <div class="prompt__secondary-text">
+				    	<ul>
+				    		<li>less than $150 in monthly income and have less than $100 on hand right now</li>
+				    		<li>or your household’s combined monthly income and money on hand are less than your household’s combined monthly rent and utilities</li>
+				    		<li>or you are a migrant or seasonal farm worker and have less $100 on hand right now</li>
+				    	</ul>
+				    </div>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<input id="benefitChoiceHealthcare" type="checkbox" name="benefitChoice" value="Text">
+				<label for="benefitChoiceHealthcare">Medicaid <i class="fa fa-plus-square" aria-hidden="true"></i><span class="benefit-description">Free or low-cost health coverage may help pay for medical bills, doctor visits, or prescriptions.</span>
+				<span class="benefit-name">Benefits are determined within 7-30 days.</span> </label>
+			</li>
+			<li>
+				<input id="benefitChoiceChildDevelopment" type="checkbox" name="benefitChoice" value="Text">
+				<label for="benefitChoiceChildDevelopment">Child Development + Care (CDC) <i class="fa fa-child" aria-hidden="true"></i>
+				<span class="benefit-description">Helps pay for the cost of childcare, after school programs, elderly care, etc. </span>
+				<span class="benefit-name">Benefits are determined within 30 days.</span> </label>
+			</li>
+			<li>
+				<input id="benefitChoiceCashAssistance" type="checkbox" name="benefitChoice" value="Text">
+				<label for="benefitChoiceCashAssistance">Cash Assistance <i class="fa fa-usd" aria-hidden="true"></i><span class="benefit-description"><i>Family Independence Program (FIP)</i></span>
+				<span class="benefit-description">For pregnant women or families with children.</span>
+				<span class="benefit-name">Benefits are determined within 45 days.</span> 
+				<span class="benefit-description"><i>Refugee Cash Assistanec (RCA)</i></span>
+				<span class="benefit-description">For people admiteed to the U.S. as refugees or someone treated as a refugee.</span>
+				<span class="benefit-name">Benefits are determined within 30 days.</span>
+				<span class="benefit-description"><i>State Disability Assistance (SDA)</i></span>
+				<span class="benefit-description">For adults with disabilities, live-in caretakers, or people in a special living arrangement.</span>
+				<span class="benefit-name">Benefits are determined within 60 days.</span></label>
+			</li>
+		</ul>
+	</div>
+</fieldset>
+
+<script>
+	$(document).ready(function() {
+		$(".usa-button-big").click(function(event) {
+				event.preventDefault();
+
+				storeData();
+
+				if ($('input:checked').length) {
+					window.location.href = "info-needed.html";
+				}
+				else {
+					alert("Please select one benefit you'd like to apply for. ");
+				}
+		    
+		});
+	});
+</script>

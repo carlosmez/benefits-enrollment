@@ -1,0 +1,276 @@
+---
+layout: application
+step: 6
+title: A few more questions that will help us better process your application.
+---
+
+<fieldset>
+  <div class="prompt">
+    <legend class="prompt__primary-text">Check all expenses that apply to your household.</legend>
+    </div>
+    <div class="response">
+    <ul class="usa-unstyled-list checkbox-group">
+      <li>
+        <input id="household_expenseTypeRent" type="checkbox" name="household_expenseType" value="Someone pays rent" class="open-dependent">
+        <label for="household_expenseTypeRent">Rent (Home and/or Lot)</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_rentPayee">Who pays?</label></p>
+          </div>
+          <div class="response">
+            <input type="text" id="household_rentPayee" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_rentAmount">How much?</label></p>
+          </div>
+          <div class="response">
+            <div class="response__input-prefix" aria-hidden="true">$</div>
+            <input type="tel" id="household_rentAmount" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_rentFrequency">How often?</label></p>
+          </div>
+          <div class="response">
+            <select id="household_rentFrequency">
+              <option value=""></option>
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Every 2 weeks">Every 2 weeks</option>
+              <option value="Twice a month">Twice a month</option>
+              <option value="Monthly">Monthly</option>
+              <option value="Yearly">Yearly</option>
+            </select>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input id="household_expenseTypeMortage" type="checkbox" name="household_expenseType" value="Someone pay mortgage" class="open-dependent">
+        <label for="household_expenseTypeMortage">Mortgage</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_mortgagePayee">Who pays?</label></p>
+          </div>
+          <div class="response">
+            <input type="text" id="household_mortgagePayee" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_mortgageAmount">How much?</label></p>
+          </div>
+          <div class="response">
+            <div class="response__input-prefix" aria-hidden="true">$</div>
+            <input type="tel" id="household_mortgageAmount" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_mortgageFrequency">How often?</label></p>
+          </div>
+          <div class="response">
+            <select id="household_mortgageFrequency">
+              <option value=""></option>
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Every 2 weeks">Every 2 weeks</option>
+              <option value="Twice a month">Twice a month</option>
+              <option value="Monthly">Monthly</option>
+              <option value="Yearly">Yearly</option>
+            </select>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input id="household_expenseTypeLandContract" type="checkbox" name="household_expenseType" value="I pay land contracts" class="open-dependent">
+        <label for="household_expenseTypeLandContract">Land Contract</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_landContractAmount">Who pays?</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="household_landContractAmount" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_landContractAmount">How much?</label></p>
+          </div>
+          <div class="response">
+            <div class="response__input-prefix" aria-hidden="true">$</div>
+            <input type="tel" id="household_landContracthouseholdAmount" />
+          </div>
+          <div class="prompt">
+            <label for="household_landContractFrequency" class="prompt__secondary-text">How often?</label>
+          </div>
+          <div class="response">
+            <select id="household_landContractFrequency">
+              <option value=""></option>
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Every 2 weeks">Every 2 weeks</option>
+              <option value="Twice a month">Twice a month</option>
+              <option value="Monthly">Monthly</option>
+              <option value="Yearly">Yearly</option>
+            </select>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input id="household_expenseTypePropertyTax" type="checkbox" name="household_expenseType" value="I pay propert tax" class="open-dependent">
+        <label for="household_expenseTypePropertyTax">Property Tax</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_propertyTaxAmount">Who pays?</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="household_propertTaxAmount" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_propertyTaxAmount">How much?</label></p>
+          </div>
+          <div class="response">
+            <div class="response__input-prefix" aria-hidden="true">$</div>
+            <input type="tel" id="household_propertyTaxAmount" />
+          </div>
+          <div class="prompt">
+            <label for="household_propertyTaxFrequency" class="prompt__secondary-text">How often?</label>
+          </div>
+          <div class="response">
+            <select id="household_propertyTaxFrequency">
+              <option value=""></option>
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Every 2 weeks">Every 2 weeks</option>
+              <option value="Twice a month">Twice a month</option>
+              <option value="Monthly">Monthly</option>
+              <option value="Yearly">Yearly</option>
+            </select>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input id="household_expenseTypeHomeownersInsurance" type="checkbox" name="household_expenseType" value="I get Social Security payments" class="open-dependent">
+        <label for="household_expenseTypeHomeownersInsurance">Homeowner's Insurance</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_homeownersInsuranceAmount">Who pays?</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="household_homeownersInsuranceAmount" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_homeownersInsuranceAmount">How much?</label></p>
+          </div>
+          <div class="response">
+            <div class="response__input-prefix" aria-hidden="true">$</div>
+            <input type="tel" id="household_homeownersInsuranceAmount" />
+          </div>
+          <div class="prompt">
+            <label for="household_homeownersInsuranceFrequency" class="prompt__secondary-text">How often?</label>
+          </div>
+          <div class="response">
+            <select id="household_homeownersInsuranceFrequency">
+              <option value=""></option>
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Every 2 weeks">Every 2 weeks</option>
+              <option value="Twice a month">Twice a month</option>
+              <option value="Monthly">Monthly</option>
+              <option value="Yearly">Yearly</option>
+            </select>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input id="household_expenseTypeOther" type="checkbox" name="household_expenseType" value="I pay other household expenses" class="open-dependent">
+        <label for="household_expenseTypeOther">Other</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_OtherAmount">Type of expense</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="household_OtherAmount" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="household_OtherAmount">How much?</label></p>
+          </div>
+          <div class="response">
+            <div class="response__input-prefix" aria-hidden="true">$</div>
+            <input type="tel" id="household_OtherAmount" />
+          </div>
+          <div class="prompt">
+            <label for="household_OtherFrequency" class="prompt__secondary-text">How often?</label>
+          </div>
+          <div class="response">
+            <select id="household_OtherFrequency">
+              <option value=""></option>
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Every 2 weeks">Every 2 weeks</option>
+              <option value="Twice a month">Twice a month</option>
+              <option value="Monthly">Monthly</option>
+              <option value="Yearly">Yearly</option>
+            </select>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input id="household_expenseTypeNotApplicable" type="checkbox" name="household_expenseType" value="None of the above applies to">
+        <label for="household_expenseTypeNotApplicable">None of the above applies to my household</label>
+      </li>
+    </ul>
+    </div>
+</fieldset>
+
+<script>
+  $(document).ready(function() {
+
+    $("input.open-dependent").on('change', function(){
+      if ($(this).is(":checked")) {
+        $(this).siblings('.dependent-field').removeClass('usa-sr-only').attr("aria-hidden", "false");
+      }
+      else {
+        $(this).siblings('.dependent-field').addClass('usa-sr-only').attr("aria-hidden", "true");
+      }
+    });
+
+    $("input.open-dependent").each(function(){
+      if ($(this).is(":checked")) {
+        $(this).siblings('.dependent-field').removeClass('usa-sr-only').attr("aria-hidden", "false");
+      }
+    });
+
+    $('form').on('submit', function() {
+
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+
+      else {
+
+        // if ($("household_mortgageAmount").val() === undefined) {
+        //   $("household_mortgageAmount").val() = 0;
+        // }
+        // if ($('#household_mortgageAmount').val() === undefined) {
+        //   $('#household_mortgageAmount').val() = 0;
+        // }
+
+        householdRentMortgage = parseInt($("#household_rentAmount").val()) + parseInt($("#household_mortgageAmount").val());
+
+        storeData();
+        getData
+
+        window.location.href = "additional-info-3.html";
+
+        return false;
+      }
+    });
+
+    // $(".usa-button-big").click(function(event) {
+    //   event.preventDefault();
+
+    //   householdRentMortgage = $('household_rentAmount').val()
+    //   + $('household_mortgageAmount').val();
+
+    //   storeData();
+    //   getData();
+
+    //   window.location.href = "additional-info-3.html";
+
+    // });
+  });
+</script>

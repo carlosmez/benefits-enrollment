@@ -1,0 +1,62 @@
+---
+layout: application
+step: 6
+title: Select utilities you or anyone in your household pay for.
+---
+
+<fieldset>
+  <div class="prompt">
+    <legend class="prompt__primary-text">Check all the utilities that apply to your household:</legend>
+  </div>
+  <div class="response">
+    <ul class="usa-unstyled-list checkbox-group">
+      <li>
+        <input id="utilityChoiceHeat" type="checkbox" name="utilityChoice" value="Text">
+        <label for="utilityChoiceHeat">Heat</label>
+      </li>
+      <li>
+        <input id="utilityChoiceCooling" type="checkbox" name="utilityChoice" value="Text">
+        <label for="utilityChoiceCooling">Cooling</label>
+      </li>
+      <li>
+        <input id="utilityChoiceElectricity" type="checkbox" name="utilityChoice" value="Text">
+        <label for="utilityChoiceElectricity">Electricity</label>
+      </li>
+      <li>
+        <input id="utilityChoiceWaterSewer" type="checkbox" name="utilityChoice" value="Text">
+        <label for="utilityChoiceWaterSewer">Water / Sewer</label>
+      </li>
+      <li>
+        <input id="utilityChoiceTrashPickup" type="checkbox" name="utilityChoice" value="Text">
+        <label for="utilityChoiceTrashPickup">Trash Pickup</label>
+      </li>
+      <li>
+        <input id="utilityChoicePhone" type="checkbox" name="utilityChoice" value="Text">
+        <label for="utilityChoicePhone">Phone</label>
+      </li>
+      <li>
+        <input id="utilityChoiceCookingFuel" type="checkbox" name="utilityChoice" value="Text">
+        <label for="utilityChoiceCookingFuel">Cooking Fuel</label>
+      </li>
+      <li>
+        <input id="utilityChoiceOther" type="checkbox" name="utilityChoice" value="Text">
+        <label for="utilityChoiceOther">Other</label>
+      </li>
+    </ul>
+  </div>
+</fieldset>
+
+<script>
+  $(document).ready(function() {
+
+    $(".usa-button-big").click(function(event) {
+      event.preventDefault();
+
+      storeData();
+      getData();
+
+      window.location.href = "additional-info-5.html";
+
+    });
+  });
+</script>
