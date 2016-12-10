@@ -5673,13 +5673,13 @@ dfn {
   height: 100%;
 }
 
-.mibridges-logo__main {
+/*.mibridges-logo__main {
   background-image: url("milogo.png");
   background-position: left 1rem center;
   background-repeat: no-repeat;
   height: 50%;
   display: inline-block;
-}
+}*/
 
 .mibridges-logo {
   background-image: url("milogo.png");
