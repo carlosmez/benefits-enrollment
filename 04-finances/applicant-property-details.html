@@ -1,0 +1,80 @@
+---
+layout: application
+step: 4
+title: Do you own any property?
+---
+
+<fieldset>
+  <div class="prompt">
+    <legend class="prompt__primary-text">Check all types of property that apply.</legend>
+    </div>
+    <div class="response">
+    <ul class="usa-unstyled-list checkbox-group">
+      <li>
+        <input id="applicant_propertyTypeHouse" type="checkbox" name="applicant_propertyType" value="Has house(s)">
+        <label for="applicant_propertyTypeHouse">I own a house(s)</label>
+      </li>
+      <li>
+        <input id="applicant_propertyTypeLandLot" type="checkbox" name="applicant_propertyType" value="Has land/lot">
+        <label for="applicant_propertyTypeLandLot">I own land/lot</label>
+      </li>
+      <li>
+        <input id="applicant_propertyTypeBuilding" type="checkbox" name="applicant_propertyType" value="Has a motorcycle">
+        <label for="applicant_propertyTypeBuilding">I own buildings</label>
+      </li>
+      <li>
+        <input id="applicant_propertyTypeBurialPlot" type="checkbox" name="applicant_propertyType" value="Has a boat">
+        <label for="applicant_propertyTypeBurialPlot">I own a burial plot</label>
+      </li>
+      <li>
+        <input id="applicant_propertyTypeRental" type="checkbox" name="applicant_propertyType" value="Has a boat">
+        <label for="applicant_propertyTypeRental">I own rental property</label>
+      </li>
+      <li>
+        <input id="applicant_propertyTypeOther" type="checkbox" name="applicant_propertyType" value="Other kinds of income" class="open-dependent">
+        <label for="applicant_propertyTypeOther">I own other property</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+      <div class="prompt" > 
+        <p class="prompt__secondary-text"><label for="propertyTypeOther">Please specify</label></p>
+      </div>
+      <div class="response">
+        <input type="text" id="propertyTypeOther" />
+      </div>
+    </div>
+      </li>
+      <li>
+        <input id="applicant_vehicleTypeNotApplicable" type="checkbox" name="applicant_vehicleType" value="None of the above applies to">
+        <label for="applicant_vehicleTypeNotApplicable">None of the above applies to me</label>
+      </li>
+    </ul>
+    </div>
+</fieldset>
+
+<script>
+  $(document).ready(function() {
+
+    $("input.open-dependent").on('change', function(){
+      if ($(this).is(":checked")) {
+        $(this).siblings('.dependent-field').removeClass('usa-sr-only').attr("aria-hidden", "false");
+      }
+      else {
+        $(this).siblings('.dependent-field').addClass('usa-sr-only').attr("aria-hidden", "true");
+      }
+    });
+
+    $("input.open-dependent").each(function(){
+      if ($(this).is(":checked")) {
+        $(this).siblings('.dependent-field').removeClass('usa-sr-only').attr("aria-hidden", "false");
+      }
+    });
+
+    $(".usa-button-big").click(function(event) {
+      event.preventDefault();
+
+      storeData();
+      getData();
+
+      window.location.href = "applicant-income.html";
+    });
+  });
+</script>
