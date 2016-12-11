@@ -131,11 +131,10 @@ title: Tell us about the <span id="print-householdSize"></span> who you live wit
       $('label[for="householdSizeLast6"]').attr("for", "householdMember6LastName");
     }
 
-    if (householdSize == 1) {
+    if (householdSize > 1) {
       $('#print-householdSize').text("person");
     }
     else {
-      householdSize = householdSize - 1;
       $('#print-householdSize').text(householdSize + " people");
     }
 
