@@ -1,0 +1,57 @@
+---
+layout: application
+step: 1
+title: Help us see how we can better process your case.
+---
+
+<fieldset>
+  <div class="prompt">
+    <legend class="prompt__primary-text">Have you ever received assistance from DHHS in the past?</legend>
+  </div>
+  <div class="response">
+    <ul class="usa-unstyled-list response__radiogroup--inline">
+      <li>
+        <input id="hasReceivedAssistanceYes" type="radio" name="hasReceivedAssistance" value="Yes" class="open-dependent">
+        <label for="hasReceivedAssistanceYes">Yes</label>
+      </li>
+      <li>
+        <input id="hasReceivedAssistanceNo" type="radio" name="hasReceivedAssistance" value="No" class="not-dependent">
+        <label for="hasReceivedAssistanceNo">No</label>
+      </li>
+    </ul>
+  </div>
+  <div class="dependent-field usa-sr-only" aria-hidden="true">
+    <div class="prompt"> 
+      <p class="prompt__secondary-text"><label for="hasReceived_caseNumber">What is/was your case number?</label></p>
+    </div>
+    <div class="response">
+      <input type="tel" id="hasReceived_caseNumber" />
+    </div>
+  </div>
+</fieldset>
+
+<script>
+  $(document).ready(function() {
+
+    $("input.open-dependent").on('change', function(){
+      if ($(this).is(":checked")) {
+        $('.dependent-field').removeClass('usa-sr-only').attr("aria-hidden", "false");
+      }
+    });
+    $("input.not-dependent").on('change', function(){
+      if ($(this).is(":checked")) {
+         $('.dependent-field').addClass('usa-sr-only').attr("aria-hidden", "true");
+      }
+    });
+
+    $(".usa-button-big").click(function(event) {
+      event.preventDefault();
+
+      storeData();
+      getData();
+
+      window.location.href = "shortcut.html";
+    });
+
+  });
+</script>
