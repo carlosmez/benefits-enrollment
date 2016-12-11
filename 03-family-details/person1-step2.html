@@ -89,6 +89,22 @@ title: <span class="everyone-else">OK, let’s review some common cases that may
   		$('.male-non-applicant').remove();
   	}
 
+    $("input:not(#householdMember1NotApplicable)").click(function () {
+      if ($("#householdMember1NotApplicable").is(':checked')) {
+        console.log('hfsfsf');
+        $("#householdMember1NotApplicable").attr("checked", false);
+      }
+    })
+
+    $("#householdMember1NotApplicable").click(function () {
+      if ($("#householdMember1NotApplicable").is(':checked')) {
+        $("input:not(#householdMember1NotApplicable)").each(function () {
+          console.log('sdfsdf')
+          $(this).attr("checked", false);
+        });
+      }
+    });
+
 		$(".usa-button-big").click(function(event) {
 			event.preventDefault();
 
