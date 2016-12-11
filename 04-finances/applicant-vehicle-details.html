@@ -1,0 +1,169 @@
+---
+layout: application
+step: 4
+title: Do you have any vehicles?
+---
+
+<fieldset>
+  <div class="prompt">
+    <legend class="prompt__primary-text">Check all types of vehicles that apply.</legend>
+    </div>
+    <div class="response">
+    <ul class="usa-unstyled-list checkbox-group">
+      <li>
+        <input id="applicant_vehicleTypeCarTruck" type="checkbox" name="applicant_vehicleType" value="Has a car/truck" class="open-dependent">
+        <label for="applicant_vehicleTypeCarTruck">I have a car/truck</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_CarTruckYear">Year</label></p>
+          </div>
+          <div class="response">
+            <input type="text" id="applicant_CarTruckYear" placeholder="1992" maxlength="4" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_CarTruckMake">Make</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="applicant_CarTruckMake" placeholder="Toyota"/>
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_CarTruckModel">Model</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="applicant_CarTruckModel" placeholder="Camry"/>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input id="applicant_vehicleTypeVan" type="checkbox" name="applicant_vehicleType" value="Has a van" class="open-dependent">
+        <label for="applicant_vehicleTypeVan">I have a van</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_VanYear">Year</label></p>
+          </div>
+          <div class="response">
+            <input type="text" id="applicant_VanYear" placeholder="1992" maxlength="4" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_VanMake">Make</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="applicant_VanMake" placeholder="Toyota"/>
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_VanModel">Model</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="applicant_VanModel" placeholder="Camry"/>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input id="applicant_vehicleTypeMotorcycle" type="checkbox" name="applicant_vehicleType" value="Has a motorcycle" class="open-dependent">
+        <label for="applicant_vehicleTypeMotorcycle">I have a motorcycle</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_MotorcycleYear">Year</label></p>
+          </div>
+          <div class="response">
+            <input type="text" id="applicant_MotorcycleYear" placeholder="1992" maxlength="4" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_MotorcycleMake">Make</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="applicant_MotorcycleMake" placeholder="Toyota"/>
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_MotorcycleModel">Model</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="applicant_MotorcycleModel" placeholder="Camry"/>
+          </div>
+        </div>
+      </li>
+      <li class="snap-only">
+        <input id="applicant_vehicleTypeBoat" type="checkbox" name="applicant_vehicleType" value="Has a boat" class="open-dependent">
+        <label for="applicant_vehicleTypeBoat">I have a boat</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_BoatYear">Year</label></p>
+          </div>
+          <div class="response">
+            <input type="text" id="applicant_BoatYear" placeholder="1992" maxlength="4" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_BoatMake">Make</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="applicant_BoatMake" placeholder="Toyota"/>
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_BoatModel">Model</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="applicant_BoatModel" placeholder="Camry"/>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input id="applicant_vehicleTypeOther" type="checkbox" name="applicant_vehicleType" value="Other kinds of income" class="open-dependent">
+        <label for="applicant_vehicleTypeOther">I have another type of vehicle</label>
+        <div class="dependent-field usa-sr-only" aria-hidden="true">
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_CarTruckYear">Year</label></p>
+          </div>
+          <div class="response">
+            <input type="text" id="applicant_VehicleOtherYear" placeholder="1992" maxlength="4" />
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_VehicleOtherMake">Make</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="applicant_VehicleOtherMake" placeholder="Toyota"/>
+          </div>
+          <div class="prompt" > 
+            <p class="prompt__secondary-text"><label for="applicant_VehicleOtherModel">Model</label></p>
+          </div>
+          <div class="response">
+            <input type="tel" id="applicant_VehicleOtherModel" placeholder="Camry"/>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input id="applicant_vehicleTypeNotApplicable" type="checkbox" name="applicant_vehicleType" value="None of the above applies to">
+        <label for="applicant_vehicleTypeNotApplicable">None of the above applies to me</label>
+      </li>
+
+    </ul>
+    </div>
+</fieldset>
+
+<script>
+  $(document).ready(function() {
+
+    $("input.open-dependent").on('change', function(){
+      if ($(this).is(":checked")) {
+        $(this).siblings('.dependent-field').removeClass('usa-sr-only').attr("aria-hidden", "false");
+      }
+      else {
+        $(this).siblings('.dependent-field').addClass('usa-sr-only').attr("aria-hidden", "true");
+      }
+    });
+
+    $("input.open-dependent").each(function(){
+      if ($(this).is(":checked")) {
+        $(this).siblings('.dependent-field').removeClass('usa-sr-only').attr("aria-hidden", "false");
+      }
+    });
+
+    $(".usa-button-big").click(function(event) {
+      event.preventDefault();
+
+      storeData();
+      getData();
+
+      window.location.href = "applicant-property-details.html";
+    });
+  });
+</script>
