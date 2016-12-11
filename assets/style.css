@@ -7281,8 +7281,8 @@ input.contains-error {
 
 /* line 57, /Users/irs/work/benefits-enrollment-demo/app/assets/stylesheets/benefits_enrollment/components/_cards.scss */
 .card__header--success-message .card__primary-heading {
-  background: #2e8540;
-  color: white;
+  /*background: #2e8540;*/
+  color: #212121;
   padding: .75em;
 }
 
