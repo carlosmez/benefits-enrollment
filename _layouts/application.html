@@ -34,18 +34,19 @@
 				</div>
 				<div class="card__footer">
 					<button class="usa-button-big" type="submit">{% if page.button_text %}{{ page.button_text }}{% else %}Next{% endif %}</button>
+					<!-- <button class="usa-button-big" type="button" onclick="window.history.back()">Back</button> -->
 				</div>
 			</div>
 		</form>
 	</div>
 <script>
-	$('input[type="radio"]').keydown(function(e)
-{
+	// $("input:visible:first").focus();
+
+	$('input[type="radio"]').keydown(function(e) {
     var arrowKeys = [38, 40];
-    if (arrowKeys.indexOf(e.which) !== -1)
-    {
-        $(this).blur();
-        return false;
+    if (arrowKeys.indexOf(e.which) !== -1) {
+	    $(this).blur();
+	    return false;
     }
 });
 </script>
