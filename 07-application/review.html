@@ -212,7 +212,12 @@ button_text: Looks great!
 	
 		$('#householdSize').val(parseInt(householdSize));
 		$('#householdShareMeals').val(parseInt(householdShareMeals));
-		$('#householdIncome').val("$" + householdIncome);
+		if (typeof householdIncome == 'object') {
+			$('#householdIncome').val("$" + 0);
+		}
+		else {
+			$('#householdIncome').val("$" + householdIncome);
+		}
 		$('#householdSavings').val("$" + householdSavings);
 		$('#householdRentMortgage').val("$" + householdRentMortgage);
 
