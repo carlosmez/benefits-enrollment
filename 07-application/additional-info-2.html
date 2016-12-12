@@ -254,7 +254,11 @@ title: Select expenses you or anyone in your household pay for.
         //   $('#household_mortgageAmount').val() = 0;
         // }
 
-        householdRentMortgage = parseInt($("#household_rentAmount").val()) + parseInt($("#household_mortgageAmount").val());
+        household_rentAmount = $('#household_rentAmount').val();
+        household_mortgageAmount = $('#household_mortgageAmount').val();
+        householdRentMortgage = parseInt(household_rentAmount) + parseInt(household_mortgageAmount);
+
+        $('#householdRentMortgage').val(householdRentMortgage);
 
         storeData();
         getData
