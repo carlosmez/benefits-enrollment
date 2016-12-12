@@ -5680,6 +5680,10 @@ dfn {
   margin: 0 2rem;
 }
 
+.next-button, .back-button {
+  display: inline-block;
+}
+
 /*.mibridges-logo__main {
   background-image: url("milogo.png");
   background-position: left 1rem center;
@@ -7117,12 +7121,27 @@ input.contains-error {
   .nav-links__link {
     font-size: 1.6rem;
   }
+
+  form [type="submit"],
+  form [type="submit"] {
+    display: inline-block;
+    margin-bottom: 1.5em;
+    margin-top: 2.5rem;
+  }
+
 }
 @media screen and (min-width: 1201px) {
   /* line 14, /Users/irs/work/benefits-enrollment-demo/app/assets/stylesheets/benefits_enrollment/components/_application-header.scss */
   .application-header__primary-heading,
   .nav-links__link {
     font-size: 1.8rem;
+  }
+
+  form [type="submit"],
+  form [type="submit"] {
+    display: inline-block;
+    margin-bottom: 1.5em;
+    margin-top: 2.5rem;
   }
 }
 /* line 28, /Users/irs/work/benefits-enrollment-demo/app/assets/stylesheets/benefits_enrollment/components/_application-header.scss */
