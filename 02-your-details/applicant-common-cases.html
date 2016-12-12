@@ -80,11 +80,11 @@ title: OK, let’s review some common cases that may apply to you.
 			storeData();
 			getData();
 
-			if (benefitChoiceHealthcare == "no") {
-				window.location.href = "../03-basic-family/household-size.html";
-			}
+			// if (benefitChoiceHealthcare == "no") {
+			// 	window.location.href = "../03-basic-family/household-size.html";
+			// }
 
-			else if ($('#commonCaseInsurance').is(':checked')) {
+			if ($('#commonCaseInsurance').is(':checked')) {
 				window.location.href = "common-case-insurance.html";
 			}
 

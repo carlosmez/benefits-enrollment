@@ -97,7 +97,7 @@ title: What is your home address?
 		<ul class="usa-unstyled-list checkbox-group">
 			<li class="female-only">
 				<input id="housingIsNotStable" type="checkbox" name="housingIsNotStable" value="No">
-				<label for="housingIsNotStable">Check if you currently do not have stable housing.</label>
+				<label for="housingIsNotStable">Check if you are currently experiencing homelessness or do not have stable housing.</label>
 			</li>
 		</ul>
 		</div>
@@ -110,20 +110,20 @@ title: What is your home address?
 		// $('#applicantZip').val(householdZipCode);
 
 		$('form').on('submit', function() {
-            applicantHomeAddress1 = $('#applicantHomeAddress1').val();
-            applicantHomeZip = $('#applicantHomeZip').val();
-            applicantHomeCity = $('#applicantHomeCity').val();
-            applicantHomeState = $('#applicantHomeState').val();
+            // applicantHomeAddress1 = $('#applicantHomeAddress1').val();
+            // applicantHomeZip = $('#applicantHomeZip').val();
+            // applicantHomeCity = $('#applicantHomeCity').val();
+            // applicantHomeState = $('#applicantHomeState').val();
 
 	        if (!checkValidityIfSupported($('form').get(0))) {
          	  return false;
     		}
-            else if (applicantHomeAddress1 === ""
-                    || applicantHomeZip === ""
-                    || applicantHomeCity === ""
-                    || applicantHomeState === "") {
-              return false;
-            }
+            // else if (applicantHomeAddress1 === ""
+            //         || applicantHomeZip === ""
+            //         || applicantHomeCity === ""
+            //         || applicantHomeState === "") {
+            //   return false;
+            // }
 
     		else {
 

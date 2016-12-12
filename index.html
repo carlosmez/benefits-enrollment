@@ -9,6 +9,7 @@ layout: basic
 			<p class="usa-font-lead">Benefits Enrollment is there.</p>
 		</div>
 		<div class="usa-width-two-thirds mibridges-logo__container">
+			<p>I would like to apply for <span id="benefit-word">Food Assitance</span></p>
 			<!-- <div class="mibridges-logo"></div> -->
 		</div>
 	</div>
@@ -68,6 +69,18 @@ layout: basic
 
 <script>
 	$(document).ready(function() {
+
+		$(function () {
+		  count = 0;
+		  wordsArray = ["Food Assistance", "Cash Assistance", "Medicaid", "Child Development + Care", "State Emergency Relief"];
+		  setInterval(function () {
+		    count++;
+		    $("#benefit-word").fadeOut(400, function () {
+		      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+		    });
+		  }, 3000);
+		});
+
 		sessionStorage.clear();
 	});
 </script>
