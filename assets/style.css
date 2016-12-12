@@ -5664,13 +5664,20 @@ dfn {
   height: 100%;
 }
 
-.mibridges-slogan__container {
+/*.mibridges-slogan__container {
   height: 100%;
   padding-top: 7rem;
-}
+}*/
 
 .mibridges-logo__container {
   height: 100%;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 3rem;
+}
+
+.enroll-steps-container, .enroll-steps-header {
+  margin: 0 2rem;
 }
 
 /*.mibridges-logo__main {
@@ -5986,6 +5993,10 @@ dfn {
   /* line 24, /Users/irs/work/benefits-enrollment-demo/app/assets/stylesheets/uswds/components/_alerts.scss */
   .usa-alert-body {
     padding-left: 5rem;
+  }
+
+  .enroll-step-icon-container {
+    margin: 7rem 0;
   }
 }
 

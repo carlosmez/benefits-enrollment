@@ -1,16 +1,11 @@
----
+<!-- ---
 layout: basic
 ---
 
 <div class="hero">
 	<div class="usa-grid logo-section">
-		<div class="usa-width-one-third mibridges-slogan__container">
-			<p class="usa-font-lead">Like a good neighbor,</p>
-			<p class="usa-font-lead">Benefits Enrollment is there.</p>
-		</div>
-		<div class="usa-width-two-thirds mibridges-logo__container">
-			<p>I would like to apply for <span id="benefit-word">Food Assitance</span></p>
-			<!-- <div class="mibridges-logo"></div> -->
+		<div class="usa-width-one-whole mibridges-logo__container">
+			<p>I would like to apply for </p><span id="benefit-word">Food Assitance.</span>
 		</div>
 	</div>
 </div>
@@ -20,13 +15,13 @@ layout: basic
 		<div class="usa-width-one-whole">
 			<h2>Apply for benefits in 3 steps</h2>
 		</div>
-		<div class="usa-width-one-whole">
+		<div class="usa-width-one-whole enroll-steps-container">
 			<div class="usa-width-one-third enroll-step">
 				<h3>1. Apply online</h3>
 				<div class="usa-width-two-thirds">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
-				<div class="usa-width-one-third">
+				<div class="usa-width-one-thirds enroll-step-icon-container">
 					<i class="fa fa-desktop enroll-step-icon" aria-hidden="true"></i>
 				</div>
 				<div class="usa-width-one-whole">
@@ -40,7 +35,7 @@ layout: basic
 					<div class="usa-width-two-thirds">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
-					<div class="usa-width-one-third">
+					<div class="usa-width-one-thirds enroll-step-icon-container">
 						<i class="fa fa-mobile enroll-step-icon" aria-hidden="true"></i>
 					</div>
 					<div class="usa-width-one-whole">
@@ -54,7 +49,7 @@ layout: basic
 				<div class="usa-width-two-thirds">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
-				<div class="usa-width-one-third">
+				<div class="usa-width-one-thirds enroll-step-icon-container">
 					<i class="fa fa-file-text-o enroll-step-icon" aria-hidden="true"></i>
 				</div>
 				<div class="usa-width-one-whole">
@@ -72,15 +67,16 @@ layout: basic
 
 		$(function () {
 		  count = 0;
-		  wordsArray = ["Food Assistance", "Cash Assistance", "Medicaid", "Child Development + Care", "State Emergency Relief"];
+		  wordsArray = ["Food Assistance.", "Cash Assistance.", "Medicaid.", "Child Development + Care.", "State Emergency Relief."];
 		  setInterval(function () {
 		    count++;
 		    $("#benefit-word").fadeOut(400, function () {
 		      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
 		    });
-		  }, 3000);
+		  }, 3900);
 		});
 
 		sessionStorage.clear();
 	});
 </script>
+ -->
