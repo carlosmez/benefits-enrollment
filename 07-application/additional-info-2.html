@@ -5,6 +5,9 @@ title: Select expenses you or anyone in your household pay for.
 ---
 
 <fieldset>
+
+  <input id="householdRentMortgage" type="tel"/>
+
   <div class="prompt">
     <legend class="prompt__primary-text">Check all expenses that apply to your household.</legend>
     </div>
@@ -218,6 +221,8 @@ title: Select expenses you or anyone in your household pay for.
 
 <script>
   $(document).ready(function() {
+
+    $('#householdRentMortgage').hide();
 
     $("input.open-dependent").on('change', function(){
       if ($(this).is(":checked")) {

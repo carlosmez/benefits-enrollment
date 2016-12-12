@@ -8,6 +8,8 @@ title: Tell us more about your job(s).
 	<p class="usa-font-lead">Where do you currently work?</p>
 	<p class="prompt__primary-text"><label for="employerName">Employer name</label></p>
 </div>
+
+<input id="householdIncome" type="tel"/>
 	
 <div class="response">
 	<input type="text" id="employerName" />
@@ -172,6 +174,8 @@ title: Tell us more about your job(s).
 <script>
 	$(document).ready(function() {
 
+    $('#householdIncome').hide();
+
     $('#employerPhone').keyup(function(){
       $(this).val($(this).val().replace(/(\d{3})\-?(\d{3})\-?(\d{4})/,"$1-$2-$3"))
     });
@@ -188,6 +192,26 @@ title: Tell us more about your job(s).
         }
 
         else {
+
+          if ($("#applicantPayFrequencyDaily").is(":checked")) {
+            $('#householdIncome').val(employerWages * 30);
+          }
+
+          else if ($("#applicantPayFrequencyWeekly").is(":checked")) {
+            $('#householdIncome').val(employerWages * 4);
+          }
+
+          else if ($("#applicantPayFrequencyBiweekly").is(":checked")) {
+            $('#householdIncome').val(employerWages * 2);
+          }
+
+          else if ($("#applicantPayFrequencyTwiceMonthly").is(":checked")) {
+            $('#householdIncome').val(employerWages * 2);
+          }
+
+          else if ($("#applicantPayFrequencyMonthly").is(":checked")) {
+            $('#householdIncome').val(employerWages);
+          }
 
 					storeData();
 					getData();
