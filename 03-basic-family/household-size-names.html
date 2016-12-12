@@ -103,33 +103,31 @@ title: Tell us about the <span id="print-householdSize"></span> who you live wit
 <script>
   $(document).ready(function() {
 
-    if (benefitChoiceHealthcare == "no") {
-      $('#householdSizeFirst1').attr("id", "householdMember1FirstName");
-      $('#householdSizeFirst2').attr("id", "householdMember2FirstName");
-      $('#householdSizeFirst3').attr("id", "householdMember3FirstName");
-      $('#householdSizeFirst4').attr("id", "householdMember4FirstName");
-      $('#householdSizeFirst5').attr("id", "householdMember5FirstName");
-      $('#householdSizeFirst6').attr("id", "householdMember6FirstName");
-      $('label[for="householdSizeFirst1"]').attr("for", "householdMember1FirstName");
-      $('label[for="householdSizeFirst2"]').attr("for", "householdMember2FirstName");
-      $('label[for="householdSizeFirst3"]').attr("for", "householdMember3FirstName");
-      $('label[for="householdSizeFirst4"]').attr("for", "householdMember4FirstName");
-      $('label[for="householdSizeFirst5"]').attr("for", "householdMember5FirstName");
-      $('label[for="householdSizeFirst6"]').attr("for", "householdMember6FirstName");
+    $('#householdSizeFirst1').attr("id", "householdMember1FirstName");
+    $('#householdSizeFirst2').attr("id", "householdMember2FirstName");
+    $('#householdSizeFirst3').attr("id", "householdMember3FirstName");
+    $('#householdSizeFirst4').attr("id", "householdMember4FirstName");
+    $('#householdSizeFirst5').attr("id", "householdMember5FirstName");
+    $('#householdSizeFirst6').attr("id", "householdMember6FirstName");
+    $('label[for="householdSizeFirst1"]').attr("for", "householdMember1FirstName");
+    $('label[for="householdSizeFirst2"]').attr("for", "householdMember2FirstName");
+    $('label[for="householdSizeFirst3"]').attr("for", "householdMember3FirstName");
+    $('label[for="householdSizeFirst4"]').attr("for", "householdMember4FirstName");
+    $('label[for="householdSizeFirst5"]').attr("for", "householdMember5FirstName");
+    $('label[for="householdSizeFirst6"]').attr("for", "householdMember6FirstName");
 
-      $('#householdSizeLast1').attr("id", "householdMember1LastName");
-      $('#householdSizeLast2').attr("id", "householdMember2LastName");
-      $('#householdSizeLast3').attr("id", "householdMember3LastName");
-      $('#householdSizeLast4').attr("id", "householdMember4LastName");
-      $('#householdSizeLast5').attr("id", "householdMember5LastName");
-      $('#householdSizeLast6').attr("id", "householdMember6LastName");
-      $('label[for="householdSizeLast1"]').attr("for", "householdMember1LastName");
-      $('label[for="householdSizeLast2"]').attr("for", "householdMember2LastName");
-      $('label[for="householdSizeLast3"]').attr("for", "householdMember3LastName");
-      $('label[for="householdSizeLast4"]').attr("for", "householdMember4LastName");
-      $('label[for="householdSizeLast5"]').attr("for", "householdMember5LastName");
-      $('label[for="householdSizeLast6"]').attr("for", "householdMember6LastName");
-    }
+    $('#householdSizeLast1').attr("id", "householdMember1LastName");
+    $('#householdSizeLast2').attr("id", "householdMember2LastName");
+    $('#householdSizeLast3').attr("id", "householdMember3LastName");
+    $('#householdSizeLast4').attr("id", "householdMember4LastName");
+    $('#householdSizeLast5').attr("id", "householdMember5LastName");
+    $('#householdSizeLast6').attr("id", "householdMember6LastName");
+    $('label[for="householdSizeLast1"]').attr("for", "householdMember1LastName");
+    $('label[for="householdSizeLast2"]').attr("for", "householdMember2LastName");
+    $('label[for="householdSizeLast3"]').attr("for", "householdMember3LastName");
+    $('label[for="householdSizeLast4"]').attr("for", "householdMember4LastName");
+    $('label[for="householdSizeLast5"]').attr("for", "householdMember5LastName");
+    $('label[for="householdSizeLast6"]').attr("for", "householdMember6LastName");
 
     if (householdSize > 1) {
       $('#print-householdSize').text("person");
